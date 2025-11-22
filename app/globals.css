@@ -1,26 +1,20 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.yellow{
+    box-shadow: 0 0 200px 100px rgb(203, 206, 63);
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.red{
+    box-shadow: 0 0 200px 100px rgb(236, 31, 4);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.blue{
+     box-shadow: 0 0 200px 100px rgb(26, 43, 99);
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.nav{
+    box-shadow:  inset 0 0 1px .1px rgba(255, 255, 255, 0.952);
+    background: rgba(255, 255, 255, 0.164);
+}
+.circlee{
+    background: linear-gradient(#ffb70062,#e93f3f2d,#3f64e973);
+}
+.btns-hero button {
+    box-shadow: 5px  5px 20px 0 #00000042, -10px -10px 10px rgb(255, 255, 255);
 }
