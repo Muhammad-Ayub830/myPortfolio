@@ -6,10 +6,10 @@ const About = () => {
    <div className={`    `}>
       <div className="content mt-20 flex items-center">
         <div className="text-conent">
-          <div className="heading  text-[60px] font-bold">
-            <span className="text-[60px] font-bold text-[#808080]">About </span>Me
+          <div className="heading text-4xl  md:text-[60px] font-bold">
+            <span className=" font-bold text-[#808080]">About </span>Me
           </div>
-         <div className="sub-heading font-bold text-3xl md:w-[70%] mt-10">
+         <div className="sub-heading font-bold text-2xl md:text-3xl md:w-[70%] mt-10">
             I’m a Full-Stack Developer specializing in Next.js, React.js, Express.js, MongoDB, and Tailwind CSS.
          </div>
          <p className="description text-[#808080] md:w-[80%] mt-10 text-lg font-semibold font-sans">

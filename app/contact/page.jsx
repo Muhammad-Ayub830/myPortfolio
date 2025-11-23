@@ -23,7 +23,7 @@ const Contact = () => {
           <p></p>
         </div>
 
-        <form action="" className='inputs p-5 px-10 border-b border-[#80808070] shadow-2xl'>
+        <form action="" className='inputs p-2 sm:p-5 px-10 border-b border-[#80808070] shadow-2xl'>
           
             <div className="email-box flex gap-3 border-b py-3 border-[#80808070]">
               <p>Email:</p>

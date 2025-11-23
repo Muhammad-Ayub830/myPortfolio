@@ -13,11 +13,11 @@ const Sidebar = ({status,setCheck}) => {
         <RiMenuFold2Fill onClick={()=>setCheck(prev=>!prev)} className='text-xl p-3 rounded-xl ml-auto text-black  shadow w-14 h-14
         cursor-pointer'/>
       <ul className='p-5 flex flex-col font-semibold text-black'>
-        <Link href='' className='p-3 text-lg  border-b'>Home</Link>
-        <Link href='' className='p-3 text-lg  border-b'>About</Link>
-        <Link href='' className='p-3 text-lg  border-b'>Skills</Link>
-        <Link href='' className='p-3 text-lg  border-b'>Projects</Link>
-        <Link href='' className='p-3 text-lg  border-b'>Contact</Link>
+        <Link href='/' className='p-3 text-lg  border-b'>Home</Link>
+        <Link href='/about' className='p-3 text-lg  border-b'>About</Link>
+        <Link href='/skills' className='p-3 text-lg  border-b'>Skills</Link>
+        <Link href='/projects' className='p-3 text-lg  border-b'>Projects</Link>
+        <Link href='/contact' className='p-3 text-lg  border-b'>Contact</Link>
        
       </ul>
     </div>

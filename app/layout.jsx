@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           <div className="red"></div>
           <div className="blue"></div>
         </div>
-        <div className="w-full p-8 md:p-23 pt-15 bg-[#ffffff67] backdrop-blur-xl absolute top-0 left-0 ">
+        <div className="w-full p-2 sm:p-8 md:p-23 pt-15 bg-[#ffffff67] backdrop-blur-xl absolute top-0 left-0 ">
           <Navbar />
 
           {children}
