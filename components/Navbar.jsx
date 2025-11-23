@@ -1,7 +1,7 @@
 'use client'
 import { Inter, Open_Sans } from 'next/font/google';
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { SiLinkedin } from "react-icons/si";
 
@@ -10,9 +10,14 @@ const nav_font = Open_Sans({
 })
 import { RiMenuFoldFill } from "react-icons/ri";
 import Sidebar from './sidebar';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [ischeck,setCheck] = useState(false);
+  const pathname = usePathname()
+  useEffect(()=>{
+    setCheck(false)
+  },[pathname])
   return (
     <div className={`flex font-bold items-center ${nav_font.className}  text-[#0D0D0D]  justify-between  p-3 px-8 text-xl rounded-full  nav relative  `}>
      <Link href={`/`}> <div className="logo  font-bold  ">[<span className='line-through'>Aks</span>]</div></Link>

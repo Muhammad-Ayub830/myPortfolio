@@ -6,10 +6,15 @@ import { RiMenuFold2Fill } from 'react-icons/ri'
 const Sidebar = ({status,setCheck}) => {
    
   return (
-    <div className={`w-full h-screen transition duration-500
-    z-10 p-10 bg-[#d6ccccd7] backdrop-blur absolute top-0
-    ${status?'right-0' : 'right-[110%]'} 
-     `} >
+   <div
+  className={`
+    fixed top-0 right-0 w-full h-screen
+    transition-transform duration-500 z-10
+    p-10 bg-[#d6ccccd7] backdrop-blur
+    ${status ? "translate-x-0" : "-translate-x-full"}
+  `}
+>
+
         <RiMenuFold2Fill onClick={()=>setCheck(prev=>!prev)} className='text-xl p-3 rounded-xl ml-auto text-black  shadow w-14 h-14
         cursor-pointer'/>
       <ul className='p-5 flex flex-col font-semibold text-black'>
