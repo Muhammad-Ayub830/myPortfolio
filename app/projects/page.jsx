@@ -20,7 +20,7 @@ const Projects = () => {
         <div className="projects text-white ">
           {/* first project that showcase my nextjs Dashboard */}
        
-         <div className="  project mb-20  mt-20 w-full rounded-[46px]   bg-[url(/dashboard.png)] bg-center bg-cover bg-no-repeat">
+         <div className="  project mb-20  mt-20 w-full rounded-[46px] ">
             <div className=" project-bg p-3 md:p-10 w-full h-full rounded-[46px] flex items-center justify-center opacity-90 hover:opacity-100 transition duration-500 ">
               <div className="cont">
                 <h1 className='text-md sm:text-xl md:text-4xl mb-5 mt-50 text-center font-bold'>Multi Pages Dashboard Using Next.Js & Tailwind</h1>

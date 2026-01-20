@@ -21,7 +21,7 @@ export default function Home() {
             Leveraging the power of Next.js and React.js for dynamic front-ends and Express.js with MongoDB for resilient back-ends, I build complete, scalable, and modern digital products that prioritize exceptional user experience.      </div>
           <div className="btns-hero mt-5 flex items-center justify-between gap-6 w-fit">
          <Link href='/projects'><button className="w-[160px] text-[#F0F0F0] h-[50px] bg-[#0D0D0D] p-3 text-[12px] rounded-xl mt-5    cursor-pointer">View Projects</button></Link>   
-            <button className="w-[160px] text-[#0D0D0D] h-[50px] bg-[#F0F0F0] p-3 text-[12px] rounded-xl mt-5  cursor-pointer">Download Resume</button>
+          <Link href="/Muhammad_Ayub.pdf" download><button className="w-[160px] text-[#0D0D0D] h-[50px] bg-[#F0F0F0] p-3 text-[12px] rounded-xl mt-5  cursor-pointer">Download Resume</button></Link>  
           </div>
         </div>
         <div className="img-logo mt-20 lg:mt-0 ">

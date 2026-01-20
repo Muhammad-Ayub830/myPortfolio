@@ -1,9 +1,11 @@
+'use client'
 import { Inter } from 'next/font/google'
-import React from 'react'
+import React, { useState } from 'react'
 const font = Inter({
   subsets: ["latin"]
 })
 const Contact = () => {
+  const [isSubmit,setSubmit] =  useState(false)
   return (
     <div className={`min-h-screen ${font.className}`}>
       <div className="text-conent mt-20">
@@ -19,11 +21,11 @@ const Contact = () => {
             <div className="p-1 rounded-full bg-[#F6C136]"></div>
             <div className="p-1 rounded-full bg-[#68F636]"></div>
           </div>
-          <p>New Post</p>
+          <p className='cursor-pointer' onClick={()=>setSubmit(false)}>New Post</p>
           <p></p>
         </div>
 
-        <form action="" className='inputs p-2 sm:p-5 px-10 border-b border-[#80808070] shadow-2xl'>
+        <form onSubmit={(e)=>{e.preventDefault(); setSubmit(true)}} action="" className='inputs p-2 sm:p-5 px-10 border-b border-[#80808070] shadow-2xl'>
           
             <div className="email-box flex gap-3 border-b py-3 border-[#80808070]">
               <p>Email:</p>
@@ -39,7 +41,7 @@ const Contact = () => {
             </div>
             <textarea name="" placeholder='Enter your message' className='w-full resize-none rounded-xl p-10 mt-20 outline-0 bg-[#ebe8e8] text-[#808080] min-h-[400px]' id=""></textarea>
             <div className="btn text-right mt-3">
-            <button className='w-[140px] h-[50px] bg-[#0D0D0D] text-[#F0F0F0] rounded-xl mr-0 text-[20px]' type='submit'>Send</button>
+            <button className={`${isSubmit? "bg-[#302d2d]" : "bg-[#0D0D0D]" } w-[140px] h-[50px]  text-[#F0F0F0] rounded-xl mr-0 text-[20px] `} type='submit'>{isSubmit? "Sent !" : "Send"}</button>
 
             </div>
         </form>

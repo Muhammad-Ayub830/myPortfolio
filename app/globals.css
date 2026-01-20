@@ -19,6 +19,6 @@
     box-shadow: 5px  5px 20px 0 #00000042, -10px -10px 10px rgb(255, 255, 255);
 }
 .project-bg{
-    background:  linear-gradient(#00000091,rgba(0, 0, 0, 0.747));
+    background-image:  linear-gradient(#00000091,rgba(0, 0, 0, 0.747)), url("/dashboard.png") ;
     /* box-shadow: 0 0 10px 10px rgba(250, 250, 250, 0.849); */
 }
