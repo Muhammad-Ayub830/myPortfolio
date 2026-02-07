@@ -11,12 +11,32 @@ const main_font = Inter({
 export default function Home() {
   return (
     <div className={` ${main_font.className}  relative    `}>
-    
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Muhammad Ayub",
+      url: "https://MuhammadAyub.site",
+      jobTitle: "Web Developer",
+      description:
+        "Muhammad Ayub is a web developer specializing in Next.js, React, Express.js, and MongoDB.",
+      sameAs: [
+        
+        "https://www.linkedin.com/in/muhammad-ayub-47373a345/",
+        "https://github.com/Muhammad-Ayub830"
+      ]
+    })
+  }}
+/>
+
       <div className="content mt-15 md:mt-20 flex justify-between  items-center lg:pr-20 lg:flex-row flex-col  ">
         <div className="text-conent">
           <div className="heading text-4xl md:text-[60px] font-bold mt-5">
-            <span className="font-bold text-[#808080]">Hi, </span>I'm Muhammad Ayub
-          </div>
+  <span className="font-bold text-[#808080]">Hi, </span>I'm Muhammad Ayub
+</div>
+
           <div className="caption text-[#808080] text-[15px] lg:w-[70%] mt-15 md:mt-20">
             Leveraging the power of Next.js and React.js for dynamic front-ends and Express.js with MongoDB for resilient back-ends, I build complete, scalable, and modern digital products that prioritize exceptional user experience.      </div>
           <div className="btns-hero mt-5 flex items-center justify-between gap-6 w-fit">

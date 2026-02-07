@@ -14,11 +14,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "MrAks Portfolio",
-  description: "full stack application developer (web developer)",
+ title: "Muhammad Ayub | Web Developer",
+  description: "Muhammad Ayub is a professional web developer specializing in Next.js, React, and modern web development.",
   verification:{
     google:'cGKfxMe3_HQgYPw93pJ3Ll7cB3A2DbMY2ck6eekOo7Q'
-  }
+  },
+  keywords: [
+    "Muhammad Ayub",
+    "Muhammad Ayub Web Developer",
+    "Next.js Developer Pakistan",
+    "React Developer Muhammad Ayub"
+  ],
 };
 
 export default function RootLayout({ children }) {
