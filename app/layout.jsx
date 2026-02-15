@@ -32,12 +32,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={` bg-[#d5d5df] relative w-[100%] max-w-[1400px]  mx-auto  `} >
        
-        <div className="grid grid-cols-3 items-center px-30 pt-30 absolute w-[100%] ">
+        <div className="lg:grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] h-full items-center px-30 pt-30 absolute w-full lg:h-28">
           <div className="yellow"></div>
-          <div className="red"></div>
-          <div className="blue"></div>
+          <div className="red mt-[400px] lg:mt-0"></div>
+          <div className="blue mt-[900px] lg:mt-0"></div>
         </div>
-        <div className="grid grid-cols-3 items-center px-30 pt-30 absolute w-[100%] top-220 left-0 ">
+        <div className=" hidden lg:grid  grid-cols-3 items-center px-30 pt-30 absolute w-[100%] top-220 left-0 ">
           <div className="yellow"></div>
           <div className="red"></div>
           <div className="blue"></div>
